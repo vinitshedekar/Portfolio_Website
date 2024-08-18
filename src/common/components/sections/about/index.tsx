@@ -44,12 +44,11 @@ export default function About() {
             <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
               <div className="flex h-full flex-col justify-center gap-6">
                 <span>
-                  I&apos;m Full-stack developer with expertise in TypeScript,
-                  React, Next.js, Node.js, and database technologies
-                  (MongoDB/PostgreSQL/MySQL) utilizing Prisma for efficient data
-                  access. Proven ability to deliver user-centered web
-                  applications with a focus on intuitive experiences and user
-                  interaction.
+                  I am a Full-stack developer skilled in JavaScript, React, Next.js, Node.js, 
+                  and database technologies (MongoDB, PostgreSQL, MySQL) for optimized data access. 
+                  Additionally, I specialize in blockchain development with proficiency in Solidity, 
+                  Hardhat, and Ethereum. I have a proven track record of delivering user-focused 
+                  web applications that prioritize user experiences and seamless user interactions.
                 </span>
                 <span>
                   Seeking for Web Development opportunities where I can leverage
@@ -65,7 +64,7 @@ export default function About() {
                     }}
                     className="w-52 lg:w-40"
                   >
-                    <span className="bg-[#ffcbb4] text-2xl font-bold uppercase dark:bg-[#ddbea9] lg:normal-case">
+                    <span className=" text-2xl font-bold uppercase lg:normal-case">
                       Contact me!
                     </span>
                   </Link>
@@ -74,7 +73,7 @@ export default function About() {
             </div>
             <div className="absolute z-30 hidden lg:left-0 lg:top-1/4 lg:block">
               <div className="relative h-72 w-72 lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]">
-                <div className="absolute inset-0 z-20 rounded-full bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] transition-opacity group-hover:opacity-60"></div>
+                <div className="absolute inset-0 z-20 rounded-full "></div>
                 <div className="absolute inset-0">
                   <Image
                     src={portfolioImg}
@@ -93,4 +92,6 @@ export default function About() {
       <SectionDivider />
     </motion.section>
   );
+
+ // absolute inset - 0 z - 20 rounded - full bg - gradient - to - b from - [#ffcbb4] via - [#e0afa0] to - [#e29578] transition - opacity group - hover: opacity - 60"
 }

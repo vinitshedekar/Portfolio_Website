@@ -1,13 +1,10 @@
 import React from 'react';
 
-import campwithusImg from '@/../public/images/camp-with-us.png';
-import carcatalogImg from '@/../public/images/car-catalog.png';
-import filedriveImg from '@/../public/images/file-drive.png';
-import projectmanagementImg from '@/../public/images/project-management.png';
-import reactfoodImg from '@/../public/images/react-food.png';
-import surgeImg from '@/../public/images/surge.png';
-import portfolioImg from '@/../public/images/portfolio.png';
-import aiLawyerImg from '@/../public/images/ai-lawyer.png';
+import portfolioImg from '@/../public/images/portfolio2.png';
+import newsletterImg from '@/../public/images/newsletter2.png';
+import dailyJournalImg from '@/../public/images/dailyJournal.png';
+import cipherChatImg from '@/../public/images/cipherChat1.png';
+import todoListImg from '@/../public/images/todoList4.png';
 import {
   BookIcon,
   BriefcaseBusinessIcon,
@@ -24,12 +21,12 @@ export const links = [
     id: 'about',
   },
   {
-    name: 'Projects',
-    id: 'projects',
-  },
-  {
     name: 'Experience',
     id: 'experience',
+  },
+  {
+    name: 'Projects',
+    id: 'projects',
   },
   {
     name: 'Skills',
@@ -43,52 +40,53 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'WhirrCrew',
-    location: 'Prague, Czechia',
-    description: `Front-end Web Develpoer position. Responsible for implemntation of accessible and interactive interface. Working on various projects with AI integration. `,
+    title: 'Full-Stack Interactive LLP',
+    location: 'Navi Mumbai, India',
+    description: `Front-end Web Develpoer Intern. Optimized web solutions using HTML, CSS, JavaScript, and React JS, significantly improving user experience also developed mobile-friendly static web pages from scratch without using pre-built component libraries.`,
     icon: React.createElement(BriefcaseBusinessIcon),
-    date: 'Jun 2024 - Present',
+    date: 'Nov 2023 - Dec 2023',
   },
   {
-    title: 'NAU',
-    location: 'Kyiv, Ukraine',
-    description: `Bachelor's degree in Cybersecurity. Studying on the faculty of Cyber Security and Software Engineering.`,
-    icon: React.createElement(BookIcon),
-    date: 'Sep 2022 - Present',
-  },
-  {
-    title: 'Self-studying',
-    location: 'Czechia',
-    description: `Digging into Programming, Software Engineering and Web Development, picking up a great expertise in TypeScript, React, Next.js, Node.js, and database technologies (MongoDB/PostgreSQL/MySQL) utilizing Prisma for efficient data access.`,
+    title: 'HackClub VITC',
+    location: 'Chennai, India',
+    description: `Blockchain & Web Developer at HackClub, Led the development and maintenance of blockchain projects. Collaborated with team members to develop the club's website.`,
     icon: React.createElement(LaptopMinimalIcon),
-    date: 'Jul 2022 - Present',
+    date: 'Oct 2022 - Present',
+  },
+  {
+    title: 'B.Tech in Computer Science and Engineering',
+    location: 'VIT Chennai, India',
+    description: `Final year undergrad studying Computer Science and Engineering with Spl. in Cyber Physical Systems from Vellore Institute of Technology Chennai.`,
+    icon: React.createElement(BookIcon),
+    date: 'Sep 2021 - Present',
   },
 ] as const;
 
 export const images = {
-  campwithusImg,
-  carcatalogImg,
-  filedriveImg,
-  projectmanagementImg,
-  reactfoodImg,
+  todoListImg,
+  newsletterImg,
+  cipherChatImg,
+  dailyJournalImg,
+  portfolioImg,
 };
 
 export const projectsData = [
   {
-    title: 'FileDrive',
+    title: 'Cipher Chat',
     description:
-      'A platform for decentralized file storage with robust user management.',
+      'A chat platform which leverages the power of blockchain technology to revolutionize digital interactions by prioritizing user privacy and security,',
     tags: [
       'React',
-      'TypeScript',
+      'JavaScript',
       'Next.js',
-      'Convex',
-      'Clerk',
-      'Shadcn',
-      'Tailwind',
+      'Node.js',
+      'Solidity',
+      'ether.js',
+      'Web3Modal',
+      'CSS',
     ],
-    imageUrl: filedriveImg,
-    link: 'https://github.com/bbyc4kes/file-drive',
+    imageUrl: cipherChatImg,
+    link: '',
   },
   {
     title: 'Portfolio',
@@ -103,47 +101,42 @@ export const projectsData = [
       'Tailwind',
     ],
     imageUrl: portfolioImg,
-    link: 'https://github.com/bbyc4kes/portfolio',
+    link: '',
   },
   {
-    title: 'Isida',
-    description: `Isida is a platform that helps people to get legal advice from the best lawyers in the world. It's a platform that connects people with lawyers.`,
+    title: 'Daily Journal',
+    description: `A blog webiste designed to seamless blog creation. This website offers users to create and publish their blogs.`,
     tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'Tailwind',
-      'OpenAI',
-      'SCRUM Methodology',
-      'End-to-End Development',
+      'HTML',
+      'CSS',
+      'Node.js',
+      'Express.js',
+      'Javascript',
     ],
-    imageUrl: aiLawyerImg,
-    link: 'mailto:azimov.worksace@gmail.com',
+    imageUrl: dailyJournalImg,
+    link: '',
   },
   {
-    title: 'Surge',
+    title: 'ToDo List website',
     description:
-      'Welcome Surge! A SaaS Website Builder - service that allows users to build and manage their own websites with integrated payment processing.',
+      'A ToDo list website to efficiently manage your tasks. This websites allows users to add, update and delete tasks.',
     tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'MySQL',
-      'Clerk',
-      'Stripe Connect',
-      'Shadcn',
-      'Tailwind',
+      'HTML',
+      'CSS',
+      'Javascript',
+      'Node.js',
+      'MongoDB',
     ],
-    imageUrl: surgeImg,
-    link: 'https://github.com/bbyc4kes/surge',
+    imageUrl: todoListImg,
+    link: '',
   },
   {
-    title: 'CampWithUs',
+    title: 'Newsletter Signup website',
     description:
-      'A platform to find and book campsites, featuring a well-designed backend and seamless client-server communication.',
-    tags: ['JavaScript', 'Express.js', 'MongoDB', 'Cloudinary', 'EJS'],
-    imageUrl: campwithusImg,
-    link: 'https://github.com/bbyc4kes/campwithus',
+      'A landing page for users to signup for newletters. This website uses MailChimp API to manage users email addresses.',
+    tags: ['HTML', 'CSS','JavaScript','Node.js', 'MailChimp API'],
+    imageUrl: newsletterImg,
+    link: '',
   },
 ] as const;
 
@@ -156,21 +149,18 @@ export const skillsData = [
   ['Express', '/svgs/express-original.svg'],
   ['Tailwind', '/svgs/tailwind-css.svg'],
   ['Framer', '/svgs/framer.svg'],
-  ['Shadcn', '/svgs/shadcnui.svg'],
-  ['Headless', '/svgs/brand-headlessui.svg'],
-  ['Redux', '/svgs/redux-original.svg'],
-  ['Prisma', '/svgs/file-type-light-prisma.svg'],
+  ['Solidity', '/svgs/solidity.svg'],
+  ['C++', '/svgs/cpp.svg'],
+  ['Java', '/svgs/java.svg'],
   ['MongoDB', '/svgs/mongodb-original.svg'],
   ['PostgreSQL', '/svgs/postgresql.svg'],
   ['MySQL', '/svgs/MySQL.svg'],
   ['Cloudinary', '/svgs/cloudinary.svg'],
-  ['Docker', '/svgs/Docker.svg'],
-  ['Clerk', '/svgs/clerk.svg'],
-  ['Axios', '/svgs/axios.svg'],
   ['HTML', '/svgs/file-type-html.svg'],
   ['CSS', '/svgs/file-type-css.svg'],
-  ['Sass', '/svgs/Sass.svg'],
   ['Git', '/svgs/git.svg'],
   ['GitHub', '/svgs/github.svg'],
+  ['AWS', '/svgs/aws.svg'],
+  ['Azure', '/svgs/azure.svg'],
   ['', '/svgs/etc.svg'],
 ] as const;

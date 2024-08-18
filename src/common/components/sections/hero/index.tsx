@@ -8,6 +8,7 @@ import { useActiveSectionContext } from "@/common/stores/active-section";
 import { smoothScrollTo } from "@/common/lib/utils";
 import { motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
+import { Github } from 'lucide-react';
 import Image from "next/image";
 
 export default function Hero() {
@@ -36,7 +37,7 @@ export default function Hero() {
           loop
           className="absolute -z-10 h-screen w-screen object-cover"
         >
-          <source src="/layout.mp4" />
+          <source src="/layout8.mp4" />
         </video>
         <div className="container flex flex-col items-start justify-center tracking-wide text-black dark:text-white">
           <div className="container relative flex h-full w-full flex-col items-center">
@@ -49,7 +50,7 @@ export default function Hero() {
                 Hey!
               </motion.span>
               <br />
-              <TextAnimation delay={1} baseText={`I'm Maksym`} />
+              <TextAnimation delay={1} baseText={`I'm Vinit Shedekar`} />
             </div>
             <motion.div
               className="w-92 flex flex-col items-center justify-center gap-3 px-4 text-sm font-medium md:mt-12 md:flex-row lg:text-lg"
@@ -60,7 +61,7 @@ export default function Hero() {
               }}
             >
               <a
-                className="group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-darkBg px-7 py-3 text-white outline-none transition hover:bg-lightBeige hover:text-black hover:dark:text-black sm:w-auto"
+                className="group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-darkBg px-7 py-3 text-white outline-none transition hover:bg-[#bfc6cf] hover:text-black hover:dark:text-white dark:hover:bg-[#282828] sm:w-auto"
                 onClick={(e) => {
                   smoothScrollTo({ e, id: "contact" });
                   setActiveSection("contact");
@@ -71,8 +72,8 @@ export default function Hero() {
               </a>
 
               <a
-                className="borderBlack group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-black outline-none transition hover:bg-gray-100 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:w-auto"
-                href="/CV_Azimov_Maksym.pdf"
+                className="borderBlack group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-black outline-none transition hover:bg-[#bfc6cf] dark:bg-white/10 dark:text-white dark:hover:bg-[#282828] sm:w-auto"
+                href="/Vinit_resume.pdf"
                 download
               >
                 <span>Download CV</span>
@@ -80,24 +81,26 @@ export default function Hero() {
 
               <div className="flex gap-2">
                 <a
-                  className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-black transition hover:bg-gray-100 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
-                  href="https://www.linkedin.com/in/maksym-azimov/"
+                  className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-black transition hover:bg-[#bfc6cf] hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-[#282828]"
+                  href="https://www.linkedin.com/in/vinit453/"
                   target="_blank"
                 >
                   <Linkedin />
                 </a>
                 <a
-                  className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-gray-700 transition hover:bg-gray-100 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
-                  href="https://github.com/bbyc4kes"
-                  target="_blank"
-                >
-                  <Image
+                  className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-black transition hover:bg-[#bfc6cf] hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-[#282828]"
+                  href="https://github.com/vinitshedekar"
+                  target="_blank">
+                  <Github />
+                </a>
+                  
+                  {/* <Image
                     width={25}
                     height={25}
-                    src={"/svgs/github.svg"}
+                    src={"/svgs/github1.svg"}
                     alt="github icon"
-                  />
-                </a>
+                  /> */}
+                
               </div>
             </motion.div>
           </div>

@@ -29,14 +29,16 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Hit me up!</SectionHeading>
+      <SectionHeading>Contact Me</SectionHeading>
       <div className="w-[min(100%,38rem)] px-4">
         <p className="mb-20 mt-6 text-gray-700 dark:text-white/80">
           Please contact me directly at{" "}
-          <a className="underline" href="mailto:azimov.workspace@gmail.com">
-            azimov.workspace@gmail.com
+          <a className="underline" href="mailto:vinit.shedekar453@gmail.com">
+            vinit.shedekar453@gmail.com
           </a>{" "}
+          <br/>
           or through this form.
+          
         </p>
 
         <form
